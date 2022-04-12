@@ -1,0 +1,5 @@
+# defaults file for ipaclient
+# vars/Fedora-26.yml
+---
+ipaclient_packages: [ "ipa-client", "libselinux-python", "python2-ipaclient", "python2-sssdconfig" ]
+#ansible_python_interpreter: '/usr/bin/python2'

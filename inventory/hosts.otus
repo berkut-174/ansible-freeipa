@@ -1,0 +1,21 @@
+[ipaclients]
+client ansible_host=192.168.50.11
+
+[ipaserver]
+server ansible_host=192.168.50.10
+
+[ipaserver:vars]
+ip_addresses=192.168.20.1
+ipaserver_ip_addresses=192.168.20.1
+ipaserver_domain=otustest.com
+ipaserver_realm=OTUSTEST.COM
+ipaserver_setup_dns=yes
+ipaserver_auto_forwarders=yes
+ipaadmin_password=MySecretPassword123
+ipadm_password=MySecretPassword234
+
+[ipaclients:vars]
+#ip_addresses=192.168.20.1
+ipaclient_servers=ipaserver.otustest.com
+ipaadmin_password=MySecretPassword123
+ipaclient_allow_repair=yes

@@ -4,5 +4,5 @@
   become: true
 
   roles:
-  - role: ipaserver
+  - role: ../roles/ipaserver
     state: present

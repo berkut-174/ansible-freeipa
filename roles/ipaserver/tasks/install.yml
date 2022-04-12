@@ -413,7 +413,7 @@
 
     - name: Install - Setup client
       include_role:
-        name: ipaclient
+        name: ../roles/ipaclient
       vars:
         state: present
         ipaclient_on_master: yes
